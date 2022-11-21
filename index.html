@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannabis vs Overdose Deaths</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://clientreporting.theinformationlab.co.uk/javascripts/api/tableau-2.min.js"></script>
+</head>
+
+<body class="green">
+    <style>
+        body {
+            font-size: 170%;
+        }
+    </style>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="static/css/style.css">Cannabis Usage vs. Overdose Deaths</a>
+        </nav>
+    </div>
+
+    <div class="jumbotron" href="static/css/style.css">
+        <h1>Cannabis Usage vs. Opioid Deaths</h1>
+    </div>
+    <div class="container-fluid"></div>
+
+    <div id = 'vizContainer'></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <form class="leaves">
+                    <style>
+                        h3 {
+                            font-size: 200%;
+                            background-image: url("../images/weed.jpg");
+                            background-size: 100% 100%;
+                            text-align: center;
+                            color: rgb(255, 238, 0);
+                        }
+                    </style>
+                    <h3>Is marijuana really a 'gateway drug'?</h3>
+
+            </div>
+            <div class="col-md-8">
+                <p>
+                    For decades, anti-drug advocates have villified the green leaf for being a 'gateway' towards
+                    harder drugs, claiming that legalization would only lead to more drug overdoses. Now that a
+                    significant number of states have passed laws legalizing the use of marijuana for medical and
+                    recreational purposes, we can finally put this claim to the test.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <form class="darkergreen">
+                <p>Filter Search</p>
+                <ul class="list-group bg-dark">
+                    <li class="list-group-item darkergreen">
+                        <label for="State">Enter a State</label>
+                        <input type="text" placeholder="Alabama" id="State" />
+                    </li>
+                    <li class="list-group-item darkergreen">
+                        <label for="Year">Enter a Year</label>
+                        <input type="number" placeholder="2014" id="Year" />
+                    </li>
+
+                    <li class="list-group-item darkergreen">
+                        <label for="Status">Enter Legal Status</label>
+                        <input type="text" placeholder="Medical" id="Status" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Population</th>
+                        <th>Year</th>
+                        <th>Cannabis Users 12+</th>
+                        <th>Cannabis Consumption Percentage</th>
+                        <th>Opioid Deaths</th>
+                        <th>Opioid Deaths Percentage</th>
+                        <th>Total Drug Deaths</th>
+                        <th>Total Drug Deaths Percentage</th>
+                        <th>Recreational</th>
+                        <th>Rec Year Legalized</th>
+                        <th>Medical</th>
+                        <th>Med Year Legalized</th>
+                        <th>Years legal (rec)</th>
+                        <th>Years legal (med)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>
