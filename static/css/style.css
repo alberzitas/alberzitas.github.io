@@ -1,0 +1,33 @@
+body {
+
+  color: #40c251;
+}
+
+.jumbotron {
+  background-image: url("../images/weed.png");
+  background-size: 100% 100%;
+  text-align: center;
+  color: #f0ebdd;
+  font-size: 100% 100%;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.green {
+  background-color: #f0ebdd;
+
+}
+
+.leaves {
+  background-image: url("../images/weed.jpg");
+  background-color: #3da14a;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+input {
+
+  width: 100%
+}
